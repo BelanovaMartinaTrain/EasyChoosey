@@ -52,7 +52,7 @@ function celkovaCena(dopravcaTam, dopravcaSpat, cenaLetenkyTam, cenaLetenkySpat,
     <p>Poznamka: ${dopravcovia[dopravcaSpat].poznamka}</p>
     <p>Poplatky: ${dopravcovia[dopravcaSpat].fee}</p>
     <p>Klub: ${jeKlub ? dopravcovia[dopravcaSpat].klub : 0}</p>
-    <h3 class="font-semibold ">Celkova cena cesta tam: ${cenaSpat}</h3>`
+    <h3 class="font-semibold ">Celkova cena cesta spat: ${cenaSpat}</h3>`
 
     vysledokCelkovyDiv.innerHTML += `
     <h3 class="font-bold mt-4 md:mt-0 2xl:mt-4">Celkova cena: <span class="font-bold">${cenaCelkova}</span></h3>`

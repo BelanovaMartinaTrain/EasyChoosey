@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>HTML 5 Boilerplate</title>
+</head>
+<body class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-6 gap-2 ">
+
+  <!-- First Column -->
+  <div class="bg-white rounded p-6 shadow-md 2xl:col-span-1 ">
+    <form id="form-letenky" class="mb-2">
+      <div class="mb-2">
+        <label for="odlet-z" class="block text-sm font-bold text-gray-600">Z</label>
+        <input placeholder="Z" id="odlet-z" list="miesta" name="odlet-z" class="w-full border p-2 rounded" required>
+        <datalist id="miesta">
+          <option value="Barcelona">
+          <option value="Vieden">
+        </datalist>
+      </div>
+
+      <div class="mb-2">
+        <label for="date" class="block text-sm font-bold text-gray-600">Datum</label>
+        <input placeholder="Datum" id="datum" type="date" name="date" class="w-full border p-2 rounded" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="cas" class="block text-sm font-bold text-gray-600">Cas</label>
+        <input placeholder="Cas" id="cas" type="time" name="cas" class="w-full border p-2 rounded" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="cena" class="block text-sm font-bold text-gray-600">Cena</label>
+        <input placeholder="cena" id="cena" type="number" name="cena" class="w-full border p-2 rounded" required>
+      </div>
+
+      <div class="mb-2">
+        <label for="dopravca" class="block text-sm font-bold text-gray-600">Dopravca</label>
+        <input list="dopravci" id="dopravca" name="dopravca" class="w-full border p-2 rounded" required>
+        <datalist id="dopravci">
+          <option value="Ryanair">
+          <option value="Wizzair">
+        </datalist>
+      </div>
+
+      <div class="">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Second Column 
+  <div class="bg-white rounded p-6 shadow-md 2xl:col-span-2">
+    <div id="div-data" class="mt-8"></div>
+  </div>-->
+
+  <!-- Third Column -->
+  <div class="container bg-white rounded p-6 shadow-md 2xl:col-span-2">
+    <div class="form-container">
+      <form id="volba" class="grid">
+        <h2>Tam</h2>
+        <div id="tam" class=""></div>
+        <h2>Spat</h2>
+        <div id="spat"></div>
+        <label for="batozina"><input type="checkbox" id="batozina" class="mt-6" name="batozina"/> Batozina</label>
+        <label for="klub"><input type="checkbox" id="klub" name="klub"> Wizzair klub</label>
+        <button type="submit" class="submit-btn bg-blue-900">Vypocitaj</button>
+      </form>
+    </div> 
+    
+  <!-- Third Column -->
+  </div>
+  <div class="bg-white rounded p-6 shadow-md 2xl:col-span-1 md:col-span-2 md:flex 2xl:flex-col">
+    <div class="result-container " id="vysledok-tam"></div>
+    <div class="result-container " id="vysledok-spat"></div>
+    <div class="result-container " id="vysledok-celkovy"></div>
+  </div>
+
+</body>
+<script src="filters.js"></script>
+<script src="calc.js"></script>
+<script src="index.js"></script>
+</html>

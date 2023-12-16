@@ -35,32 +35,32 @@ function celkovaCena(dopravcaTam, dopravcaSpat, cenaLetenkyTam, cenaLetenkySpat,
     let cenaCelkova = cenaTam + cenaSpat
 
     vysledokTamDiv.innerHTML += `
-    <h3>Cesta tam</h3>
+    <h3 class="font-bold mb-2">Cesta tam</h3>
     <p>Dopravca: ${dopravcaTam}</p>
     <p>Letenka: ${cenaLetenkaTam}</p>
     <p>Batozina: ${cenaBatozinaTam}</p>
     <p>Poznamka: ${dopravcovia[dopravcaTam].poznamka}</p>
     <p>Poplatky: ${dopravcovia[dopravcaTam].fee}</p>
     <p>Klub: ${jeKlub ? dopravcovia[dopravcaTam].klub : 0}</p>
-    <h3>Celkova cena cesta tam: ${cenaTam}</h3>`
+    <h3 class="font-semibold ">Celkova cena cesta tam: ${cenaTam}</h3>`
 
     vysledokSpatDiv.innerHTML += `
-    <br><h3>Cesta spat</h3>
+    <h3 class="font-bold mb-2 mt-4 md:mt-0 2xl:mt-4">Cesta spat</h3>
     <p>Dopravca: ${dopravcaSpat}</p>
     <p>Letenka: ${cenaLetenkaSpat}</p>
     <p>Batozina: ${cenaBatozinaSpat}</p>
     <p>Poznamka: ${dopravcovia[dopravcaSpat].poznamka}</p>
     <p>Poplatky: ${dopravcovia[dopravcaSpat].fee}</p>
     <p>Klub: ${jeKlub ? dopravcovia[dopravcaSpat].klub : 0}</p>
-    <h3>Celkova cena cesta tam: ${cenaSpat}</h3>`
+    <h3 class="font-semibold ">Celkova cena cesta tam: ${cenaSpat}</h3>`
 
     vysledokCelkovyDiv.innerHTML += `
-    <br><h3>Celkova cena: <span class="font-bold">${cenaCelkova}</span></h3>`
+    <h3 class="font-bold mt-4 md:mt-0 2xl:mt-4">Celkova cena: <span class="font-bold">${cenaCelkova}</span></h3>`
 }
 
 function calculation(data) {
     console.log(data)
-
+    let vysledokDiv = document.getElementById("vysledok")
     let tam = String(data[0][1]).split(' ')
     let spat = String(data[1][1]).split(' ')
     let cenaBatozinyTam = 0
@@ -70,6 +70,8 @@ function calculation(data) {
     let cenaLetenkyTam = tam[1]
     let cenaLetenkySpat = spat[1]
     let jeKlub = false
+
+    vysledokDiv.classList.remove("invisible")
 
     if (data.length >= 3 &&  data[2][0] === "batozina" ) {
         cenaBatozinyTam = dopravcovia[dopravcaTam].batozina 

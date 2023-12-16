@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Vyber leteniek</title>
 </head>
-<body class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-6 gap-2 ">
+<body class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-6 gap-2 p-2">
 
   <!-- First Column -->
   <div class="bg-white rounded p-6 shadow-md 2xl:col-span-1 ">
@@ -46,7 +46,7 @@
       </div>
 
       <div class="">
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add</button>
+        <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded shadow-slate-400 shadow-md">Add</button>
       </div>
     </form>
   </div>
@@ -60,22 +60,22 @@
   <div class="container bg-white rounded p-6 shadow-md 2xl:col-span-2">
     <div class="form-container">
       <form id="volba" class="grid">
-        <h2>Tam</h2>
+        <h2 class="font-bold mb-2">Tam</h2>
         <div id="tam" class=""></div>
-        <h2>Spat</h2>
+        <h2 class="font-bold mb-2 mt-4">Spat</h2>
         <div id="spat"></div>
         <label for="batozina"><input type="checkbox" id="batozina" class="mt-6" name="batozina"/> Batozina</label>
         <label for="klub"><input type="checkbox" id="klub" name="klub"> Wizzair klub</label>
-        <button type="submit" class="submit-btn bg-blue-900">Vypocitaj</button>
+        <button type="submit" class="submit-btn bg-blue-900 max-w-fit rounded text-white px-4 py-2 mt-4 shadow-slate-400 shadow-md">Vypocitaj</button>
       </form>
     </div> 
     
   <!-- Third Column -->
   </div>
-  <div class="bg-white rounded p-6 shadow-md 2xl:col-span-1 md:col-span-2 md:flex 2xl:flex-col">
-    <div class="result-container " id="vysledok-tam"></div>
-    <div class="result-container " id="vysledok-spat"></div>
-    <div class="result-container " id="vysledok-celkovy"></div>
+  <div id="vysledok" class=" bg-white rounded p-6 shadow-md 2xl:col-span-1 md:col-span-3 md:flex 2xl:flex-col invisible">
+    <div class="result-container p-1" id="vysledok-tam"></div>
+    <div class="result-container p-1" id="vysledok-spat"></div>
+    <div class="result-container p-1" id="vysledok-celkovy"></div>
   </div>
 
 </body>

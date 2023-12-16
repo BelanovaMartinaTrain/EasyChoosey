@@ -36,26 +36,32 @@ function celkovaCena(dopravcaTam, dopravcaSpat, cenaLetenkyTam, cenaLetenkySpat,
 
     vysledokTamDiv.innerHTML += `
     <h3 class="font-bold mb-2">Cesta tam</h3>
-    <p>Dopravca: ${dopravcaTam}</p>
-    <p>Letenka: ${cenaLetenkaTam}</p>
-    <p>Batozina: ${cenaBatozinaTam}</p>
-    <p>Poznamka: ${dopravcovia[dopravcaTam].poznamka}</p>
-    <p>Poplatky: ${dopravcovia[dopravcaTam].fee}</p>
-    <p>Klub: ${jeKlub ? dopravcovia[dopravcaTam].klub : 0}</p>
-    <h3 class="font-semibold ">Celkova cena cesta tam: ${cenaTam}</h3>`
+    <div class="grid grid-cols-2 justify-items-stretch text gap-x-2">
+        <p>Dopravca:</p><p> ${dopravcaTam}</p>
+        <p>Letenka:</p><p> ${cenaLetenkaTam}</p>
+        <p>Batozina:</p><p> ${cenaBatozinaTam}</p>
+        <p>Poplatky:</p><p> ${dopravcovia[dopravcaTam].fee}</p>
+        <p>Klub:</p><p> ${jeKlub ? dopravcovia[dopravcaTam].klub : 0}</p>
+        <h3 class="font-semibold ">Celkova cena cesta tam:</h3><h3 class="font-semibold"> ${cenaTam}</h3>
+    </div>`
+
+    //<p>Poznamka:</p><p> ${dopravcovia[dopravcaTam].poznamka}</p>
 
     vysledokSpatDiv.innerHTML += `
     <h3 class="font-bold mb-2 mt-4 md:mt-0 2xl:mt-4">Cesta spat</h3>
-    <p>Dopravca: ${dopravcaSpat}</p>
-    <p>Letenka: ${cenaLetenkaSpat}</p>
-    <p>Batozina: ${cenaBatozinaSpat}</p>
-    <p>Poznamka: ${dopravcovia[dopravcaSpat].poznamka}</p>
-    <p>Poplatky: ${dopravcovia[dopravcaSpat].fee}</p>
-    <p>Klub: ${jeKlub ? dopravcovia[dopravcaSpat].klub : 0}</p>
-    <h3 class="font-semibold ">Celkova cena cesta spat: ${cenaSpat}</h3>`
+    <div class="grid grid-cols-2 justify-items-stretch text gap-x-2">
+        <p>Dopravca:</p><p> ${dopravcaSpat}</p>
+        <p>Letenka:</p><p> ${cenaLetenkaSpat}</p>
+        <p>Batozina:</p><p> ${cenaBatozinaSpat}</p>
+        <p>Poplatky:</p><p> ${dopravcovia[dopravcaSpat].fee}</p>
+        <p>Klub:</p><p> ${jeKlub ? dopravcovia[dopravcaSpat].klub : 0}</p>
+        <h3 class="font-semibold ">Celkova cena cesta spat:</h3><h3 class="font-semibold"> ${cenaSpat}</h3>
+    </div>`;
+
+    //      <p>Poznamka:</p><p> ${dopravcovia[dopravcaSpat].poznamka}</p>
 
     vysledokCelkovyDiv.innerHTML += `
-    <h3 class="font-bold mt-4 md:mt-0 2xl:mt-4">Celkova cena: <span class="font-bold">${cenaCelkova}</span></h3>`
+    <div class="grid grid-cols-2 justify-around mt-4 gap-x-2 md:mt-0 2xl:mt-4"><h3 class="font-bold">Celkova cena: </h3><span class="font-bold ">${cenaCelkova}</span></div>`
 }
 
 function calculation(data) {

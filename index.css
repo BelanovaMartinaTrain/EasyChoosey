@@ -14,7 +14,7 @@
 }
 
 .bigger-font {
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
 .center {
@@ -33,18 +33,18 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 0.5rem;
 }
 
 .widget {
     background: rgba(0, 0, 0, 0.60);
-    border-radius: 0.9rem;
+    border-radius: 0.5rem;
 }
 
 .widget-for-small {
     background: rgba(0, 0, 0, 0.60);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .width-100 {
@@ -56,11 +56,11 @@
 }
 
 .padding-small {
-    padding: 1.5rem;
+    padding: 0.5rem;
 } 
 
 .margin-sm-btm {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 /* END UTILITY CLASSES*/
@@ -75,7 +75,7 @@ html, body {
     font-weight: 300;
     color: white;
     margin: 0;
-    padding: 1rem; 
+    padding: 0.4rem; 
 }
 
 nav {
@@ -103,7 +103,7 @@ menu {
 h1 {
     font-family: white-angelica;
     font-weight: 200;
-    font-size: 5.5rem;
+    font-size: 2rem;
     color: white;
     text-align: center;
 	margin: 0;
@@ -112,28 +112,28 @@ h1 {
 
 h2 {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 1rem;
     margin: 0;
 	padding: 0;
 }
 
 h3 {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 1rem;
 	margin: 0;
 	padding: 0;
 
 }
 
 p {
-    font-size: 2.1rem;
+    font-size: 0.8rem;
 	margin: 0;
 	padding: 0;
 }
 
 main {	
 
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -149,7 +149,7 @@ footer {
 }
 
 .title {
-    padding: 4rem 0;
+    padding: 1.5rem 0;
 }
 
 .quickview-div {
@@ -168,7 +168,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .time-main {
@@ -179,7 +179,7 @@ footer {
 
 .img-latest {
     width: 90%;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .material-symbols-outlined {
@@ -192,19 +192,15 @@ footer {
 
 .info-icon {
     position: absolute;
-    top: 50%;
-    right: -2.2rem; /* Adjust as needed */
+    top: 55%;
+    right: -1.3rem; /* Adjust as needed */
     transform: translateY(-50%);
     cursor: pointer;
-	font-size: 2rem;
+	font-size: 1rem;
 }
 
 .menu-btn {
-	font-size: 5.5rem;
+	font-size: 2.2rem;
 	grid-area: menu;
-    width: 5.5rem;
+    width: 2.2rem;
 }
-
-
-
-

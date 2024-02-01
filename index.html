@@ -1,85 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Vyber leteniek</title>
-</head>
-<body class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-6 gap-2 p-2">
+<!doctype html>
+<html>
+    <head>
+        <title>Aurora Forecast</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
 
-  <!-- First Column -->
-  <div class="bg-white rounded p-6 shadow-md 2xl:col-span-1 ">
-    <form id="form-letenky" class="mb-2">
-      <div class="mb-2">
-        <label for="odlet-z" class="block text-sm font-bold text-gray-600">Z</label>
-        <input placeholder="Z" id="odlet-z" list="miesta" name="odlet-z" class="w-full border p-2 rounded" required>
-        <datalist id="miesta">
-          <option value="Barcelona">
-          <option value="Vieden">
-        </datalist>
-      </div>
-
-      <div class="mb-2">
-        <label for="date" class="block text-sm font-bold text-gray-600">Datum</label>
-        <input placeholder="Datum" id="datum" type="date" name="date" class="w-full border p-2 rounded" required>
-      </div>
-
-      <div class="mb-2">
-        <label for="cas" class="block text-sm font-bold text-gray-600">Cas</label>
-        <input placeholder="Cas" id="cas" type="time" name="cas" class="w-full border p-2 rounded" required>
-      </div>
-
-      <div class="mb-2">
-        <label for="cena" class="block text-sm font-bold text-gray-600">Cena</label>
-        <input placeholder="cena" id="cena" type="number" name="cena" class="w-full border p-2 rounded" required>
-      </div>
-
-      <div class="mb-2">
-        <label for="dopravca" class="block text-sm font-bold text-gray-600">Dopravca</label>
-        <input list="dopravci" id="dopravca" name="dopravca" class="w-full border p-2 rounded" required>
-        <datalist id="dopravci">
-          <option value="Ryanair">
-          <option value="Wizzair">
-        </datalist>
-      </div>
-
-      <div class="">
-        <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded shadow-slate-200 shadow-md">Add</button>
-      </div>
-    </form>
-  </div>
-
-  <!-- Second Column 
-  <div class="bg-white rounded p-6 shadow-md 2xl:col-span-2">
-    <div id="div-data" class="mt-8"></div>
-  </div>-->
-
-  <!-- Third Column -->
-  <div class="container bg-white rounded p-6 shadow-md 2xl:col-span-2">
-    <div class="form-container">
-      <form id="volba" class="grid">
-        <h2 class="font-bold mb-2">Tam</h2>
-        <div id="tam" class=""></div>
-        <h2 class="font-bold mb-2 mt-4">Spat</h2>
-        <div id="spat"></div>
-        <label for="batozina"><input type="checkbox" id="batozina" class="mt-6" name="batozina"/> Batozina</label>
-        <label for="klub"><input type="checkbox" id="klub" name="klub"> Wizzair klub</label>
-        <button type="submit" class="submit-btn bg-blue-900 max-w-fit rounded text-white px-4 py-2 mt-4 shadow-slate-200 shadow-md">Vypocitaj</button>
-      </form>
-    </div> 
-    
-  <!-- fourth Column -->
-  </div>
-  <div id="vysledok" class=" bg-white rounded p-6 shadow-md 2xl:col-span-2 md:col-span-3 md:grid md:grid-cols-3 2xl:flex 2xl:flex-col invisible">
-    <div class="result-container p-1" id="vysledok-tam"></div>
-    <div class="result-container p-1" id="vysledok-spat"></div>
-    <div class="result-container p-1" id="vysledok-celkovy"></div>
-  </div>
-
-</body>
-<script src="filters.js"></script>
-<script src="calc.js"></script>
-<script src="index.js"></script>
+        
+        <!--Navigation comp-->
+        <header>
+            <h1 class="title">Aurora Borealis</h1>
+			<menu >
+				<span class="material-symbols-outlined menu-btn widget-for-small" >menu</span>
+				
+				<!--Time vidget-->
+				<div class="time center"  >
+					<div class="time-nav widget heigth-100">
+						<p>16:29 CST</p>
+						<p>15:29 UTC</p>
+					</div>
+				</div>
+				<!--Time vidget-->
+				
+			</menu>
+            <nav class="widget">
+                <h2>DASHBOARD</h2>
+                <h2>GRAPHS</h2>
+                <h2>WEATHER</h2>
+                <h2>BLOG</h2>
+            </nav>        
+        </header>
+        <!--Navigation comp-->
+        
+        <main>
+			<div class="grid">
+        <!--Quickview widget-->
+        
+				<div class="padding-small quickview-div widget grid-item center padding-small">
+					<div class="center quickview-item width-100">
+						<p class="relative margin-sm-btm">Kp index 
+							<span class="material-symbols-outlined info-icon">info</span>
+						</p>
+						<h3 class="bigger-font">3</h3>
+						<p>Low</p>
+					</div>
+					<div class="center quickview-item width-100">
+						<p class="relative margin-sm-btm">Space weather <span class="material-symbols-outlined info-icon">info</span></p>
+						<h3>R: none</h3>
+						<h3>S: none</h3>
+						<h3>G: none</h3>
+					</div>
+				</div>
+			
+			<!--Quickview widget-->
+			
+			<!--Quickview widget-->
+			
+				<div class="quickview-div widget grid-item center padding-small">
+					<div class="center quickview-item width-100">
+						<p class="relative">Solar wind<span class="material-symbols-outlined info-icon">info</span></p>
+						<p class="margin-sm-btm"> speed:</p>
+						<h3>315 km/h</h3>
+					</div>
+					<div class="center quickview-item width-100">
+						<p class="relative margin-sm-btm">Magnetic field <span class="material-symbols-outlined info-icon">info</span></p>
+						<h3>Bt: 5 nT</h3>
+						<h3>Bt: 1 nT</h3>
+					</div>
+				</div>
+			</div>
+			<!--Quickview widget-->
+			
+			<!--Time vidget-->
+				<div class="widget time center hidden">
+					<div class="time-main">
+						<p>16:29 CST</p>
+						<p>15:29 UTC</p>
+					</div>
+				</div>
+			<!--Time vidget-->
+			
+        </main>
+		
+		<!--Footer comp-->
+		<footer>
+			<div>&#169; 2024 Martina Belanova</div>
+		</footer>
+		<!--Footer comp-->
+    </body>
 </html>

@@ -1,95 +1,134 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Aurora Forecast</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+  <head>
+    <title>Aurora Forecast</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>        
+    <!--Header comp-->
+    <header>
 
+      <!--Title comp-->
+      <h1 class="title">Aurora Borealis</h1>
+      <!--Title comp-->
+
+      <!--Menu comp-->
+      <menu class="margin-sm-btm">
+        <span class="material-symbols-outlined menu-btn widget-for-small" >menu</span>
         
-        <!--Navigation comp-->
-        <header>
-            <h1 class="title">Aurora Borealis</h1>
-			<menu class="margin-sm-btm">
-				<span class="material-symbols-outlined menu-btn widget-for-small" >menu</span>
-				
-				<!--Time vidget-->
-				<div class="time center"  >
-					<div class="time-nav widget heigth-100">
-						<p>16:29 CST</p>
-						<p>15:29 UTC</p>
-					</div>
-				</div>
-				<!--Time vidget-->
-				
-			</menu>
-            <nav class="widget">
-                <h2>DASHBOARD</h2>
-                <h2>GRAPHS</h2>
-                <h2>WEATHER</h2>
-                <h2>BLOG</h2>
-            </nav>        
-        </header>
-        <!--Navigation comp-->
+        <!--Time widget-->
+        <div class="time center"  >
+          <div class="time-nav widget heigth-100">
+            <p>16:29 CST</p>
+            <p>15:29 UTC</p>
+          </div>
+        </div>
+        <!--Time widget-->
         
-        <main>
-			<div class="grid">
+      </menu>
+      <!--Menu comp-->
+
+      <!--Navigation comp-->
+      <nav class="widget">
+        <h2>DASHBOARD</h2>
+        <h2>GRAPHS</h2>
+        <h2>WEATHER</h2>
+        <h2>BLOG</h2>
+      </nav>       
+      <!--Navigation comp-->
+
+    </header>
+    <!--Header comp-->
+
+    <!--Main comp-->
+    <main>
+      <div class="grid">
+
         <!--Quickview widget-->
-        
-				<div class="padding-small quickview-div widget grid-item center padding-small">
-					<div class="center quickview-item width-100">
-						<p class="relative margin-sm-btm">Kp index 
-							<span class="material-symbols-outlined info-icon">info</span>
-						</p>
-						<h3 class="bigger-font">3</h3>
-						<p>Low</p>
-					</div>
-					<div class="center quickview-item width-100">
-						<p class="relative margin-sm-btm">Space weather <span class="material-symbols-outlined info-icon">info</span></p>
-						<h3>R: none</h3>
-						<h3>S: none</h3>
-						<h3>G: none</h3>
-					</div>
-				</div>
-			
-			<!--Quickview widget-->
-			
-			<!--Quickview widget-->
-			
-				<div class="quickview-div widget grid-item center padding-small">
-					<div class="center quickview-item width-100">
-						<p class="relative">Solar wind<span class="material-symbols-outlined info-icon">info</span></p>
-						<p class="margin-sm-btm"> speed:</p>
-						<h3>315 km/h</h3>
-					</div>
-					<div class="center quickview-item width-100">
-						<p class="relative margin-sm-btm">Magnetic field <span class="material-symbols-outlined info-icon">info</span></p>
-						<h3>Bt: 5 nT</h3>
-						<h3>Bt: 1 nT</h3>
-					</div>
-				</div>
-			</div>
-			<!--Quickview widget-->
-			
-			<!--Time vidget-->
-				<div class="widget time center hidden">
-					<div class="time-main">
-						<p>16:29 CST</p>
-						<p>15:29 UTC</p>
-					</div>
-				</div>
-			<!--Time vidget-->
-			
-        </main>
-		
-		<!--Footer comp-->
-		<footer>
-			<div>&#169; 2024 Martina Belanova</div>
-		</footer>
-		<!--Footer comp-->
-    </body>
+        <div class="widget center padding-small">
+          <h2 class="margin-sm-btm">Aurora activity</h2>
+          <div class="quickview-div grid-item center margin-sm-btm">
+            <div class="center quickview-item width-100">
+              <p class="relative margin-sm-btm">Kp index 
+                <span class="material-symbols-outlined info-icon">info</span>
+              </p>
+              <h3 class="bigger-font">3</h3>
+              <p>Low</p>
+            </div>
+            <div class="center quickview-item width-100">
+              <p class="relative margin-sm-btm">Space weather <span class="material-symbols-outlined info-icon">info</span></p>
+              <h3>R: none</h3>
+              <h3>S: none</h3>
+              <h3>G: none</h3>
+            </div>
+          </div>
+        </div>
+        <!--Quickview widget-->
+    
+        <!--Quickview widget-->      
+        <div class="quickview-div widget grid-item center padding-small">
+          <div class="center quickview-item width-100">
+            <p class="relative">Solar wind<span class="material-symbols-outlined info-icon">info</span></p>
+            <p class="margin-sm-btm"> speed:</p>
+            <h3>315 km/h</h3>
+          </div>
+          <div class="center quickview-item width-100">
+            <p class="relative margin-sm-btm">Magnetic field <span class="material-symbols-outlined info-icon">info</span></p>
+            <h3>Bt: 5 nT</h3>
+            <h3>Bz: 1 nT</h3>
+          </div>
+        </div>
+        <!--Quickview widget-->
+
+        <!--Quickview widget-->      
+        <div class="widget center padding-small">
+          <h2>Weather</h2>
+          <div class="quickview-div grid-item center margin-sm-btm">
+            <div class="center quickview-item width-100">
+              <p class="margin-sm-btm">Temperature:</p>
+              <h3 class="margin-sm-btm">5&#176C</h3>
+              <p class="margin-sm-btm">Wind:</p>
+              <h3>5m/s SE</h3>
+            </div>
+            <div class="center quickview-item width-100">
+              <h3 class="margin-sm-btm">Clouds: </3>
+              <p>Low: 10%</p>
+              <p>Middle: 60%</p>
+              <p>High: 0%</p>
+            </div>
+          </div>
+        </div>
+        <!--Quickview widget-->
+
+        <!--Latest image widget-->
+        <div class="widget center padding-small grid-item" style="padding:20px;">
+          <h3 class="padding-small">Northern Hemisphere</h3>
+          <img src="./images/latest.jpg" alt="image of the latest aurora activity" class="img-latest center"/>
+        </div>
+        <!--Time widget-->
+
+      </div>
+      
+      <!--Time widget-->
+      <div class="widget center hidden">
+        <div class="time-main">
+          <p>16:29 CST</p>
+          <p>15:29 UTC</p>
+        </div>
+      </div>
+      <!--Time widget-->
+    
+    </main>
+    <!--Main comp-->
+
+    <!--Footer comp-->
+    <footer>
+      <div>&#169; 2024 Martina Belanova</div>
+    </footer>
+    <!--Footer comp-->
+  </body>
 </html>

@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: 'white-angelica';
     src: url('./fonts/WhiteAngelica.ttf');
@@ -32,7 +30,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 0.5rem;
+    gap: 0.7rem;
 }
 
 .widget {
@@ -101,7 +99,7 @@ menu {
 h1 {
     font-family: white-angelica;
     font-weight: 200;
-    font-size: 5.4rem;
+    font-size: 5.9rem;
     color: white;
     text-align: center;
 	margin: 0;
@@ -110,7 +108,7 @@ h1 {
 
 h2 {
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     margin: 0;
 	padding: 0;
 }
@@ -147,7 +145,7 @@ footer {
 }
 
 .title {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .quickview-div {
@@ -173,6 +171,11 @@ footer {
     grid-area: time;
     display: grid;
 
+}
+
+.img-latest {
+    width: 90%;
+    padding-bottom: 2.5rem;
 }
 
 .material-symbols-outlined {

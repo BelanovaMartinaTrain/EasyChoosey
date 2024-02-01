@@ -71,7 +71,8 @@ html, body {
     font-weight: 300;
     color: white;
     margin: 0;
-    padding: 1rem;
+    padding: 1rem; 
+    height: 100dvh;
 }
 
 nav {

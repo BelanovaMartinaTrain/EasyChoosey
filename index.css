@@ -58,7 +58,7 @@
 } 
 
 .margin-sm-btm {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* END UTILITY CLASSES*/
@@ -74,10 +74,6 @@ html, body {
     color: white;
     margin: 0;
     padding: 1rem;
-}
-
-header {
-    padding: 0.5rem;
 }
 
 nav {
@@ -96,9 +92,6 @@ nav {
 
 menu {
     display: grid;
-    grid-gap: 0.5rem;
-    /*! width: 95vw; */
-    grid-template-columns: repeat(4, 1fr);
     grid-template:
 	"menu . time time";
 	margin: 0;
@@ -173,7 +166,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 2vw;
+    padding: 0 1rem;
 }
 
 .time-main {
@@ -193,10 +186,10 @@ footer {
 .info-icon {
     position: absolute;
     top: 50%;
-    right: -22px; /* Adjust as needed */
+    right: -2.2rem; /* Adjust as needed */
     transform: translateY(-50%);
     cursor: pointer;
-	font-size: 1.1rem;
+	font-size: 2rem;
 }
 
 .menu-btn {

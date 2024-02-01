@@ -1,6 +1,10 @@
 @font-face {
     font-family: 'white-angelica';
-    src: url('./fonts/WhiteAngelica.ttf');
+    src: url('subset-WhiteAngelicaRegular.woff2') format('woff2'),
+        url('subset-WhiteAngelicaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* UTILITY CLASSES*/

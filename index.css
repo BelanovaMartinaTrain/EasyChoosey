@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'white-angelica';
-    src: url('subset-WhiteAngelicaRegular.woff2') format('woff2'),
-        url('subset-WhiteAngelicaRegular.woff') format('woff');
+    src: url('./fonts/subset-WhiteAngelicaRegular.woff2') format('woff2'),
+        url('./fonts/subset-WhiteAngelicaRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

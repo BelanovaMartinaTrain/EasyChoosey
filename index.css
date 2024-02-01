@@ -30,7 +30,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 0.7rem;
+    gap: 1rem;
 }
 
 .widget {

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
   </head>
   <body>        
@@ -51,17 +51,17 @@
 
         <!--Quickview widget-->
         <div class="widget center padding-small">
-          <h2 class="margin-sm-btm">Aurora activity</h2>
-          <div class="quickview-div grid-item center margin-sm-btm">
+          <h2 class="center padding-sm-btm uppercase font-sm-h2">Aurora activity</h2>
+          <div class="quickview-div grid-item padding-xs-btm ">
             <div class="center quickview-item width-100">
-              <p class="relative margin-sm-btm">Kp index 
+              <p class="relative padding-xs-btm">Kp index 
                 <span class="material-symbols-outlined info-icon">info</span>
               </p>
               <h3 class="bigger-font">3</h3>
               <p>Low</p>
             </div>
             <div class="center quickview-item width-100">
-              <p class="relative margin-sm-btm">Space weather <span class="material-symbols-outlined info-icon">info</span></p>
+              <p class="relative padding-xs-btm">Space weather <span class="material-symbols-outlined info-icon">info</span></p>
               <h3>R: none</h3>
               <h3>S: none</h3>
               <h3>G: none</h3>
@@ -71,35 +71,38 @@
         <!--Quickview widget-->
     
         <!--Quickview widget-->      
-        <div class="quickview-div widget grid-item center padding-small">
-          <div class="center quickview-item width-100">
-            <p class="relative">Solar wind<span class="material-symbols-outlined info-icon">info</span></p>
-            <p class="margin-sm-btm"> speed:</p>
-            <h3>315 km/h</h3>
-          </div>
-          <div class="center quickview-item width-100">
-            <p class="relative margin-sm-btm">Magnetic field <span class="material-symbols-outlined info-icon">info</span></p>
-            <h3>Bt: 5 nT</h3>
-            <h3>Bz: 1 nT</h3>
+        <div class="widget center padding-small">
+          <h2 class="padding-sm-btm uppercase padding-sm-btm font-sm-h2">Geomagnetic activity</h2>
+          <div class="quickview-div">
+            <div class="center grid-item quickview-item width-100">
+              <p class="relative">Solar wind<span class="material-symbols-outlined info-icon">info</span></p>
+              <p class="margin-sm-btm"> speed:</p>
+              <h3>315 km/h</h3>
+            </div>
+            <div class="center quickview-item width-100">
+              <p class="relative margin-sm-btm">Magnetic field <span class="material-symbols-outlined info-icon">info</span></p>
+              <h3>Bt: 5 nT</h3>
+              <h3>Bz: 1 nT</h3>
+            </div>
           </div>
         </div>
         <!--Quickview widget-->
 
         <!--Quickview widget-->      
         <div class="widget center padding-small">
-          <h2>Weather</h2>
+          <h2 class="uppercase padding-sm-btm font-sm-h2">Weather</h2>
           <div class="quickview-div grid-item center margin-sm-btm">
-            <div class="center quickview-item width-100">
+            <div class="center quickview-item width-100 padding-sm-btm">
               <p class="margin-sm-btm">Temperature:</p>
               <h3 class="margin-sm-btm">5&#176C</h3>
               <p class="margin-sm-btm">Wind:</p>
               <h3>5m/s SE</h3>
             </div>
-            <div class="center quickview-item width-100">
-              <h3 class="margin-sm-btm">Clouds: </3>
-              <p>Low: 10%</p>
-              <p>Middle: 60%</p>
-              <p>High: 0%</p>
+            <div class="center quickview-item width-100 padding-sm-btm">
+              <p class="margin-sm-btm">Clouds: </p>
+              <h3>Low: 10%</h3>
+              <h3>Middle: 60%</h3>
+              <h3>High: 0%</h3>
             </div>
           </div>
         </div>
@@ -107,8 +110,8 @@
 
         <!--Latest image widget-->
         <div class="widget center padding-small grid-item" style="padding:20px;">
-          <h3 class="padding-small">Northern Hemisphere</h3>
-          <img src="./images/latest.jpg" alt="image of the latest aurora activity" class="img-latest center"/>
+          <h3 class="img-text uppercase padding-sm-btm">Northern Hemisphere</h3>
+          <img src="./images/latest.jpg" alt="image of the latest aurora activity" width="80vw" height="36.95vh" class="img-latest "/>
         </div>
         <!--Time widget-->
 

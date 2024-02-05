@@ -56,11 +56,29 @@
 }
 
 .padding-small {
-    padding: 0.5rem;
+    padding: 0.7rem;
 } 
 
 .margin-sm-btm {
     margin-bottom: 0.2rem;
+}
+
+.padding-sm-btm {
+    padding-bottom: 0.5rem
+}
+
+.padding-xs-btm {
+    padding-bottom: 0.2rem
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-sm-h2 {
+    font-size: smaller;
+    font-weight: 400;
+    color: gray;
 }
 
 /* END UTILITY CLASSES*/
@@ -139,6 +157,9 @@ main {
 }
 
 footer {
+    max-height: 1rem;
+    margin-top: auto;
+    vertical-align: middle;
     position: absolute; 
     bottom: 0; 
     left: 40%; 
@@ -174,12 +195,12 @@ footer {
 .time-main {
     grid-area: time;
     display: grid;
-
 }
 
 .img-latest {
-    width: 90%;
-    padding-bottom: 0.5rem;
+    width: 96.98%;
+    height: 89.94%;
+    padding-bottom: 0.2rem;
 }
 
 .material-symbols-outlined {
@@ -203,4 +224,8 @@ footer {
 	font-size: 2.2rem;
 	grid-area: menu;
     width: 2.2rem;
+}
+
+.img-text {
+    margin-bottom: 0.5rem;
 }

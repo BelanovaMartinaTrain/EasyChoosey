@@ -75,10 +75,14 @@
     text-transform: uppercase;
 }
 
-.font-sm-h2 {
+.font-h2 {
     font-size: smaller;
     font-weight: 400;
     color: gray;
+}
+
+.font-smaller {
+    font-size: smaller;
 }
 
 /* END UTILITY CLASSES*/
@@ -144,9 +148,12 @@ h3 {
 }
 
 p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 	margin: 0;
 	padding: 0;
+    text-transform: uppercase;
+    color: silver;
+    font-weight: 600;
 }
 
 main {	

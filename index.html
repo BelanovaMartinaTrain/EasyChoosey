@@ -3,7 +3,6 @@
   <head>
     <title>Aurora Forecast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -19,7 +18,7 @@
 
       <!--Menu comp-->
       <menu class="margin-sm-btm">
-        <span class="material-symbols-outlined menu-btn widget-for-small" >menu</span>
+        <span class="material-symbols-outlined menu-btn widget-for-small " ><img src="./icons/menu.svg" class="center"/></span>
         
         <!--Time widget-->
         <div class="time center"  >
@@ -53,19 +52,25 @@
         <div class="widget center padding-small">
           <h2 class="center padding-sm-btm uppercase font-h2">Aurora activity</h2>
           <div class="quickview-div grid-item padding-xs-btm ">
-            <div class="center quickview-item width-100">
+            <div class="center quickview-item width-100 padding-sm-r">
               <p class="relative padding-xs-btm">Kp index 
-                <span class="material-symbols-outlined info-icon">info</span>
+                <span class="material-symbols-outlined info-icon">
+                  <img src="./icons/info.svg"/>
+                </span>
               </p>
               <h3 class="bigger-font">3</h3>
             </div>
-            <div class="center quickview-item width-100">
+            <div class="center quickview-item width-100 padding-sm-r">
               <p class="relative padding-xs-btm">Activity</p>
               <h3 class="padding-sm-btm">Moderate</h3>
-              <p class="relative padding-xs-btm">Geomagnetic storm<span class="material-symbols-outlined info-icon">info</span></p>
+              <p class="relative padding-xs-btm">Geomagnetic storm
+                <span class="material-symbols-outlined info-icon">
+                  <img src="./icons/info.svg"/>
+                </span>
+              </p>
               <!-- h3>R: none</h3>
               <h3>S: none</h3-->
-              <h3 class="padding-xs-btm">none</h3>
+              <h3 class="padding-xs-btm">G1</h3>
             </div>
           </div>
         </div>
@@ -76,14 +81,20 @@
           <h2 class="padding-sm-btm uppercase padding-sm-btm font-h2">Geomagnetic activity</h2>
           <div class="quickview-div">
             <div class="center grid-item quickview-item width-100">
-              <p class="relative">Solar wind<span class="material-symbols-outlined info-icon">info</span></p>
+              <p class="relative">Solar wind
+                <span class="material-symbols-outlined info-icon">
+                  <img src="./icons/info.svg"/>
+                </span>
+              </p>
               <p class="margin-sm-btm"> speed:</p>
               <h3>315 km/h</h3>
             </div>
             <div class="center quickview-item width-100">
-              <p class="relative margin-sm-btm">Magnetic field <span class="material-symbols-outlined info-icon">info</span></p>
+              <p class="relative margin-sm-btm">Magnetic field 
+                <span class="material-symbols-outlined info-icon">
+                  <img src="./icons/info.svg"/></span></p>
               <h3>Bt: 5 nT</h3>
-              <h3>Bz: 1 nT</h3>
+              <h3>Bz: - 1 nT</h3>
             </div>
           </div>
         </div>
@@ -101,9 +112,9 @@
             </div>
             <div class="center quickview-item width-100 padding-sm-btm">
               <p class="margin-sm-btm">Clouds: </p>
-              <h3>Low: 10%</h3>
-              <h3>Middle: 60%</h3>
-              <h3>High: 0%</h3>
+              <h3 class="font-smaller">Low: 10%</h3>
+              <h3 class="font-smaller">Middle: 60%</h3>
+              <h3 class="font-smaller">High: 0%</h3>
             </div>
           </div>
         </div>

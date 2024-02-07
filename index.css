@@ -19,7 +19,7 @@
 /* VARIABLES */
 
 :root {
-    --font-h1-size: clamp(2.2rem, 8vw, 4rem);
+    --font-h1-size: clamp(2.2rem, 8vw, 3.7rem);
     --font-h2-size: 1rem;
     --font-h3-size: 1rem;
     --font-p-size: 0.6rem;
@@ -27,6 +27,8 @@
     --font-bigger: 3rem;
     --font-smaller: 0.95rem;
     --grid-widget-width: 17rem;
+    --grid-gap: 0.4rem;
+    --widget-background: rgba(0, 0, 0, 60%);
 }
 
 /* ELEMENTS CSS */
@@ -140,9 +142,8 @@ footer {
 }
 
 .img-latest {
-    width: 98%;
-    aspect-ratio: 1 / 1;
-    padding-bottom: 0.2rem;
+    display: block;
+    width: 100%;
 }
 
 .info-icon {
@@ -161,13 +162,9 @@ footer {
     height: 2.2rem;
 }
 
-.img-text {
-    margin-bottom: 0.5rem;
-}
-
 .grouped-widget {
     display: grid;
-    gap: 0.5rem;
+    gap: var(--grid-gap);
 }
 
 .graph {
@@ -176,8 +173,8 @@ footer {
 }
 
 .img-graph {
-    width: 98%;
-    aspect-ratio: 3 / 1.7;
+    display: block;
+    width: 100%;
     padding: 0.5rem;
 }
 
@@ -206,17 +203,17 @@ footer {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--grid-widget-width), 1fr));
-    gap: 1%;
+    gap: var(--grid-gap);
 }
 
 .widget {
-    background: rgba(0, 0, 0, 0.60);
+    background: var(--widget-background);
     border-radius: 8px;
     box-sizing: border-box;    
 }
 
 .widget-for-small {
-    background: rgba(0, 0, 0, 0.60);
+    background: var(--widget-background);
     border-radius: 0.3rem;
 }
 
@@ -281,6 +278,7 @@ footer {
         --widget-max-height: 150px;
         --font-bigger: 3.5rem;
         --font-smaller: 1.1rem;
+        --grid-gap: 0.5rem;
     }
     
     nav {

@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>        
     <!--Header comp-->
@@ -87,7 +88,7 @@
                 </span>
               </p>
               <p class="margin-sm-btm"> speed:</p>
-              <h3>315 km/h</h3>
+              <h3>315 km/sec</h3>
             </div>
             <div class="center quickview-item width-100">
               <p class="relative margin-sm-btm">Magnetic field 
@@ -117,7 +118,7 @@
                 <p class="padding-xs-btm">Temperature:</p>
                 <h3 class="padding-sm-btm">5&#176C</h3>
                 <p class="padding-xs-btm">Wind:</p>
-                <h3>5m/s SE</h3>
+                <h3>5km/h SE</h3>
               </div>
               <div class="center quickview-item width-100 padding-sm-btm">
                 <p class="margin-sm-btm">Clouds: </p>
@@ -128,10 +129,52 @@
             </div>
           </div>
           <!--graph widget-->
-          <div class="widget center graph">
+          <div class="widget center graph hidden">
             <img src="./images/graph.png" alt="Graph with forecast of KP number for today, hourly" class="img-graph" />
           </div>
           <!--graph widget-->
+          <!--Graph widget-->
+          <div class="widget center padding-small grid-item">
+            <canvas id="myChart" style="display: block; width: 100%;"></canvas>
+            <script>
+                const xValues = ["00-03", "03-06", "06-09", "09-12", "12-15", "15-18", "18-21", "21-00"];
+                const yValues = [1, 3, 3, 1, 1, 6, 9, 5, 2];
+                const barColors = [
+                  "rgba(47, 105, 93,1.0)",
+                  "rgba(47, 105, 93,0.95)",
+                  "rgba(47, 105, 93,0.9)",
+                  "rgba(47, 105, 93,0.85)",
+                  "rgba(47, 105, 93,0.8)",
+                  "rgba(47, 105, 93,1.75)",
+                  "rgba(47, 105, 93,0.7)",
+                  "rgba(47, 105, 93,0.65)",
+                  "rgba(47, 105, 93,0.6)",
+                  "rgba(47, 105, 93,0.55)"
+                ];
+                
+                new Chart("myChart", {
+                  type: "bar",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    legend: {display: false},
+                    scales: {
+                      yAxes: [{
+                        ticks: {
+                          beginAtZero: true
+                        }
+                      }],
+                    }
+                  }
+                });
+            </script>
+          </div>
+          <!--Graph widget-->
         </div>    
         <!--Quickview widget-->
 
@@ -140,18 +183,14 @@
           <h3 class="img-text uppercase margin-xs-btm">Northern Hemisphere</h3>
           <img src="./images/latest.jpg" alt="image of the latest aurora activity"  class="img-latest "/>
         </div>
-        <!--Time widget-->
+        <!--Latest image widget-->
+
 
       </div>
       
-      <!--Time widget-->
-      <div class="widget center hidden">
-        <div class="time-main">
-          <p>16:29 CST</p>
-          <p>15:29 UTC</p>
-        </div>
-      </div>
-      <!--Time widget-->
+
+
+
     
     </main>
     <!--Main comp-->

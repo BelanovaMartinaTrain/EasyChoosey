@@ -19,11 +19,11 @@
 /* VARIABLES */
 
 :root {
-    --font-h1-size: clamp(2.2rem, 8vw, 3.7rem);
+    --font-h1-size: clamp(2.2rem, 8vw, 3.55rem);
     --font-h2-size: 1rem;
     --font-h3-size: 1rem;
     --font-p-size: 0.6rem;
-    --widget-max-height: 150px;
+    --widget-max-height: 180px;
     --font-bigger: 3rem;
     --font-smaller: 0.95rem;
     --grid-widget-width: 17rem;
@@ -110,6 +110,10 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
     display: none;
+}
+
+canvas {
+    max-width: 100%;
 }
 
 .title {
@@ -272,7 +276,7 @@ footer {
 @media (min-width: 768px) {
     
     :root {
-        --font-h2-size: 1.2rem;
+        --font-h2-size: 1.1rem;
         --font-h3-size: 1.2rem;
         --font-p-size: 0.7rem;
         --widget-max-height: 150px;
@@ -309,7 +313,7 @@ footer {
 
 @media (min-width: 1024px) { 
             :root {
-        --font-h2-size: 1.3rem;
+        --font-h2-size: 1.2rem;
         --font-h3-size: 1.3rem;
         --font-p-size: 0.75rem;
         --widget-max-height: 190px;
@@ -321,19 +325,19 @@ footer {
 @media (min-width: 1280px) {
     
     nav {
-        max-width: clamp(769px, 60vw, 1024px);
+        max-width: 769px;
     }
     main {
         max-width: clamp(769px, 60vw, 1024px);
     }
     
         :root {
-        --font-h2-size: 1.44rem;
-        --font-h3-size: 1.44rem;
+        --font-h2-size: 1.2rem;
+        --font-h3-size: 1.34rem;
         --font-p-size: 0.84rem;
         --widget-max-height: 190px;
-        --font-bigger: 4.2rem;
-        --font-smaller: 1.32rem;
+        --font-bigger: 4rem;
+        --font-smaller: 1.28rem;
     }
     
     .grid {

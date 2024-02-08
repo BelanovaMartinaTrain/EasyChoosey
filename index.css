@@ -264,8 +264,8 @@ canvas {
 
 .font-h2 {
     font-size: smaller;
-    font-weight: 500;
-    color: #909090;
+    font-weight: 600;
+    color: gray;
 }
 
 .font-smaller {

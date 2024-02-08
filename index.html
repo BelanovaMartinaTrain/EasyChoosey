@@ -139,7 +139,7 @@
                 <img src="./icons/info-gray.svg"/>
               </span>
             </h2>
-            <canvas id="myChart" ></canvas>
+            <canvas id="myChart" style="color: white;"></canvas>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
             <script>
                 const xValues = ["00-03", "03-06", "06-09", "09-12", "12-15", "15-18", "18-21", "21-00"];
@@ -171,10 +171,17 @@
                     scales: {
                       yAxes: [{
                         ticks: {
+                          fontColor: "silver",
                           beginAtZero: true
                         }
                       }],
-                    }
+                      xAxes: [{
+                        ticks: {
+                          fontColor: "silver"
+                        }
+                      }]
+                    },
+
                   }
                 });
             </script>

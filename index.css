@@ -48,6 +48,7 @@ html, body {
 
 nav {
     display: none;
+    cursor: pointer;
 }
 
 menu {
@@ -118,6 +119,7 @@ canvas {
 
 .title {
     padding: 1.5rem 0;
+    cursor: pointer;
 }
 
 .quickview-div {

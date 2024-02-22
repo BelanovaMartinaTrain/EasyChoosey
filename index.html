@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
     <link rel="manifest" href="./public/site.webmanifest">
   </head>
-  <body>        
+  <body >        
     <!--Header comp-->
     <header>
 
@@ -27,7 +27,7 @@
         <span class="material-symbols-outlined menu-btn widget-for-small " ><img src="./icons/menu.svg" alt="menu icon" class="center"/></span>
         
         <!--Time widget-->
-        <div class="time center"  >
+        <div tabindex="0" class="time center"  >
           <div class="time-nav widget heigth-100">
             <h2 class="font-smaller">16:29 CST</h2>
             <h2 class="font-smaller">15:29 UTC</h2>
@@ -123,7 +123,11 @@
                 <p class="padding-xs-btm">Temperature</p>
                 <h3 class="padding-sm-btm">5&#176C</h3>
                 <p class="padding-xs-btm">Wind</p>
-                <h3>5km/h SE</h3>
+                <h3>5km/h 
+                  <span class="material-symbols-outlined info-icon-kp" style="transform: translate(50%, -10%) rotate(180deg);">  
+                    <img src="./icons/arrow.svg" alt="info icon"/>
+                  </span></h3>                
+
               </div>
               <div class="center quickview-item width-100 padding-sm-btm">
                 <p class="margin-sm-btm">Clouds </p>
@@ -216,4 +220,5 @@
     </footer>
     <!--Footer comp-->
   </body>
+  <div id="background"></div>
 </html>

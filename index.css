@@ -34,16 +34,28 @@
 /* ELEMENTS CSS */
 
 html, body { 
-    background: url(images/background.jpg) no-repeat center center fixed, black; 
+    /* background: url(images/background.jpg) no-repeat center center fixed, black; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
+    
     font-family: 'Quicksand', system-ui, sans-serif;
     font-weight: 300;
     color: gainsboro;
     margin: 0;
     padding: 0.4rem; 
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    z-index: -1;
 }
 
 nav {
@@ -154,6 +166,12 @@ canvas {
     width: 100%;
 }
 
+.wind-arrow__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 .info-icon {
     position: absolute;
     top: 57%;
@@ -221,7 +239,9 @@ canvas {
 .widget {
     background: var(--widget-background);
     border-radius: 8px;
-    box-sizing: border-box;    
+    box-sizing: border-box; 
+    outline: none; 
+
 }
 
 .widget-for-small {

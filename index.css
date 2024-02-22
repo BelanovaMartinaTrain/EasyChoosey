@@ -34,12 +34,12 @@
 /* ELEMENTS CSS */
 
 html, body { 
-    /* background: url(images/background.jpg) no-repeat center center fixed, black; 
+    background: url(images/background.jpg) no-repeat center center fixed, black; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
-    
+    background-size: cover;
+    height: 100lvh;
     font-family: 'Quicksand', system-ui, sans-serif;
     font-weight: 300;
     color: gainsboro;
@@ -47,16 +47,7 @@ html, body {
     padding: 0.4rem; 
 }
 
-#background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100svh;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    z-index: -1;
-}
+
 
 nav {
     display: none;

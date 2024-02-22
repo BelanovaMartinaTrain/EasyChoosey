@@ -39,7 +39,7 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100lvh;
+    height: 100svh;
     font-family: 'Quicksand', system-ui, sans-serif;
     font-weight: 300;
     color: gainsboro;
